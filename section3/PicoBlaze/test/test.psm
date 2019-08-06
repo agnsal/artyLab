@@ -1,0 +1,4 @@
+; read from switches and display to the LEDs
+start: INPUT s0,00
+OUTPUT s0,01
+JUMP start

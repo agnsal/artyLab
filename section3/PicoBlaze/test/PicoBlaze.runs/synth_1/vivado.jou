@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Aug  4 12:55:34 2019
+# Process ID: 9936
+# Current directory: C:/Users/Agnese/Desktop/HOMELABS/2-ArtyFPGA/workspaces/section3/PicoBlaze/PicoBlaze.runs/synth_1
+# Command line: vivado.exe -log embedded_pico.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source embedded_pico.tcl
+# Log file: C:/Users/Agnese/Desktop/HOMELABS/2-ArtyFPGA/workspaces/section3/PicoBlaze/PicoBlaze.runs/synth_1/embedded_pico.vds
+# Journal file: C:/Users/Agnese/Desktop/HOMELABS/2-ArtyFPGA/workspaces/section3/PicoBlaze/PicoBlaze.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source embedded_pico.tcl -notrace
