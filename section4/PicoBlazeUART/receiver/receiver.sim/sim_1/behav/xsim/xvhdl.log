@@ -1,0 +1,12 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Agnese/Desktop/HOMELABS/2-ArtyFPGA/workspaces/section4/PicoBlazeUART/receiver/kcpsm6.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'kcpsm6'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Agnese/Desktop/HOMELABS/2-ArtyFPGA/workspaces/section4/PicoBlazeUART/receiver/test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'test'
+INFO: [VRFC 10-3107] analyzing entity 'jtag_loader_6'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Agnese/Desktop/HOMELABS/2-ArtyFPGA/workspaces/section4/PicoBlazeUART/receiver/receiver.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'receiver'
+INFO: [VRFC 10-3107] analyzing entity 'jtag_loader_6'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Agnese/Desktop/HOMELABS/2-ArtyFPGA/workspaces/section4/PicoBlazeUART/receiver/uart_rx6.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'uart_rx6'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Agnese/Desktop/HOMELABS/2-ArtyFPGA/workspaces/section4/PicoBlazeUART/receiver/embedded_pico.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'embedded_pico'

@@ -1,0 +1,7 @@
+Running: xsim.dir/embedded_pico_behav/xsimk.exe -simmode gui -wdb embedded_pico_behav.wdb -simrunnum 0 -socket 60137
+Design successfully loaded
+Design Loading Memory Usage: 6616 KB (Peak: 6616 KB)
+Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 8460 KB (Peak: 8460 KB)
+Simulation CPU Usage: 15 ms

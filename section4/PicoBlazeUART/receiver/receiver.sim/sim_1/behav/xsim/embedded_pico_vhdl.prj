@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../kcpsm6.vhd" \
+"../../../../test.vhd" \
+"../../../../receiver.vhd" \
+"../../../../uart_rx6.vhd" \
+"../../../../embedded_pico.vhd" \
+
+# Do not sort compile order
+nosort

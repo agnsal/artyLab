@@ -1,0 +1,59 @@
+; Software implemented UART Receiver
+;
+; Receives one character into 's5' at 115200 baud with 1 start bit, 1 stop bit and no
+; parity. All timing is based on a 50MHz clock where each bit period is equivalent to 217
+; instructions. A valid character is signified by Z=0 and C=0. A timeout (~51us with no ; serial activity) is signified by Z=1 and C=0. When serial activity is detected but
+; character is invalid then Z=0 and C=1.
+;
+; Registers used s0, s1, s2 and s5.
+;
+
+CONSTANT UART_input_port, 04 ; Receive serial data
+CONSTANT UART_output_port, 10 ; Transmit serial data
+CONSTANT serial_data, 00000001'b ; bit0 - serial data
+LOAD s0, serial_data
+OUTPUT s0, UART_output_port ;initialise serial output
+
+UART_RX: 
+	LOAD s1, 255'd ;Detect beginning of start bit (0) or timeout
+rx_timeout: 
+	INPUT s0, UART_input_port ; 255 x 5 = 1275 instructions or ~51us.
+	TEST s0, serial_data ;test serial input for change to '0'
+	JUMP Z, start_bit
+	SUB s1, 1'd
+	JUMP NZ, rx_timeout
+	RETURN ;Timeout returns with Z=1 and C=0
+;
+start_bit: 
+	LOAD s1, 51'd ;Wait until middle of start bit
+	mid_start_delay: SUB s1, 1'd ;51 x 2 = 102 instruction delay
+	JUMP NZ, mid_start_delay
+	INPUT s0, UART_input_port ;test for start bit = '0'
+	SR1 s0 ;shift start bit into carry flag and force Z=0
+	RETURN C ;Will abort with C=1 and Z=0 if start bit was High
+;
+LOAD s2, 08 ;8 bits to receive
+RX_loop: 
+	LOAD s1, 105'd ;Loop delay is (105 x 2) + 6 = 216 instructions
+rx_bit_delay: 
+	SUB s1, 1'd
+	JUMP NZ, rx_bit_delay
+	INPUT s0, UART_input_port ;sample data bit at mid-point
+	SR0 s0 ;move data bit into carry flag
+	SRA s5 ;Shift data bit into 's5' LSB first
+	SUB s2, 1'd ;count 8 bits
+	JUMP NZ, RX_loop
+;
+; Finally wait one more bit period and sample the stop bit which should be High.
+; If it is Low then set carry flag to indicate error. But if it is High the
+; character is good and the return must be made with Z=0.
+;
+stop_bit: 
+	LOAD s1, 106'd ;Wait until middle of stop bit
+stop_bit_delay: 
+	SUB s1, 1'd ;(106 x 2) + 5 = 217 instructions
+	JUMP NZ, stop_bit_delay
+	INPUT s0, UART_input_port ;test for stop bit = '1'
+	XOR s0, serial_data ;invert bit so that correct value for carry flag
+	SR1 s0 ;shift inverted bit into carry flag force Z=0
+	RETURN ;For good character return with Z=0 and C=0

@@ -1,0 +1,1 @@
+-wto "b203d0cf5acf497fbee93cbb795bdb4f" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "embedded_pico_behav" "xil_defaultlib.embedded_pico" -log "elaborate.log" 

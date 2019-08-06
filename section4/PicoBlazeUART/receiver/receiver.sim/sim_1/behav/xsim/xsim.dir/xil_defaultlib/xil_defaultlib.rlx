@@ -1,0 +1,9 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+C:/Users/Agnese/Desktop/HOMELABS/2-ArtyFPGA/workspaces/section4/PicoBlazeUART/receiver/embedded_pico.vhd,1565019702,vhdl,,,,embedded_pico,,,,,,,,
+C:/Users/Agnese/Desktop/HOMELABS/2-ArtyFPGA/workspaces/section4/PicoBlazeUART/receiver/kcpsm6.vhd,1400661852,vhdl,,,,kcpsm6,,,,,,,,
+C:/Users/Agnese/Desktop/HOMELABS/2-ArtyFPGA/workspaces/section4/PicoBlazeUART/receiver/receiver.vhd,1565017271,vhdl,,,,receiver,,,,,,,,
+C:/Users/Agnese/Desktop/HOMELABS/2-ArtyFPGA/workspaces/section4/PicoBlazeUART/receiver/test.vhd,1565009192,vhdl,C:/Users/Agnese/Desktop/HOMELABS/2-ArtyFPGA/workspaces/section4/PicoBlazeUART/receiver/receiver.vhd,,,jtag_loader_6;jtag_loader_pkg;test,,,,,,,,
+C:/Users/Agnese/Desktop/HOMELABS/2-ArtyFPGA/workspaces/section4/PicoBlazeUART/receiver/uart_rx6.vhd,1301587178,vhdl,,,,uart_rx6,,,,,,,,
