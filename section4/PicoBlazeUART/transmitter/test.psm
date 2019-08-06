@@ -1,0 +1,59 @@
+; UART Transmit Example
+;
+start: LOAD s1, 48	;ASCII "H".
+CALL xmit		;Send character.
+LOAD s1, 65		;ASCII "e".
+CALL xmit		;Send character.
+LOAD s1, 6c		;ASCII "l".
+CALL xmit		;Send character.
+LOAD s1, 6c		;ASCII "l".
+CALL xmit		;Send character.
+LOAD s1, 6f		;ASCII "o".
+CALL xmit		;Send character.
+LOAD s1, 2c		;ASCII ",".
+CALL xmit		;Send character.
+LOAD s1, 20		;ASCII " ".
+CALL xmit		;Send character.
+LOAD s1, 49		;ASCII "I".
+CALL xmit		;Send character.
+LOAD s1, 27		;ASCII "'".
+CALL xmit		;Send character.
+LOAD s1, 6d		;ASCII "m".
+CALL xmit		;Send character.
+LOAD s1, 20		;ASCII " ".
+CALL xmit		;Send character.
+LOAD s1, 50		;ASCII "P".
+CALL xmit		;Send character.
+LOAD s1, 69		;ASCII "i".
+CALL xmit		;Send character.
+LOAD s1, 63		;ASCII "c".
+CALL xmit		;Send character.
+LOAD s1, 6f		;ASCII "o".
+CALL xmit		;Send character.
+LOAD s1, 42		;ASCII "B".
+CALL xmit		;Send character.
+LOAD s1, 6c		;ASCII "l".
+CALL xmit		;Send character.
+LOAD s1, 61		;ASCII "a".
+CALL xmit		;Send character.
+LOAD s1, 7a		;ASCII "z".
+CALL xmit		;Send character.
+LOAD s1, 65		;ASCII "e".
+CALL xmit		;Send character.
+LOAD s1, 20		;ASCII " ".
+CALL xmit		;Send character.
+LOAD s1, 3b		;ASCII ";".
+CALL xmit		;Send character.
+LOAD s1, 29		;ASCII ")".
+CALL xmit		;Send character.
+LOAD s1, 0d		;ASCII "\r".
+CALL xmit		;Send character.
+JUMP start
+
+; Routine to transmit data via RS-232
+xmit:INPUT s0, 00	;read uart status.
+AND s0, 80		;Test buffer full condition 
+JUMP NZ, xmit		;Poll buffer full condition
+OUTPUT s1, 00		;If buffer is not full, send byte 
+RETURN
+

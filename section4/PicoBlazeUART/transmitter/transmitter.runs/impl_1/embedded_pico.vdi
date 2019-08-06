@@ -1,0 +1,124 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Aug  5 14:54:31 2019
+# Process ID: 6624
+# Current directory: C:/Users/Agnese/Desktop/HOMELABS/2-ArtyFPGA/workspaces/section4/PicoBlazeUART/transmitter/transmitter.runs/impl_1
+# Command line: vivado.exe -log embedded_pico.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source embedded_pico.tcl -notrace
+# Log file: C:/Users/Agnese/Desktop/HOMELABS/2-ArtyFPGA/workspaces/section4/PicoBlazeUART/transmitter/transmitter.runs/impl_1/embedded_pico.vdi
+# Journal file: C:/Users/Agnese/Desktop/HOMELABS/2-ArtyFPGA/workspaces/section4/PicoBlazeUART/transmitter/transmitter.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source embedded_pico.tcl -notrace
+Command: link_design -top embedded_pico -part xc7a35ticsg324-1L
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
+INFO: [Netlist 29-17] Analyzing 74 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Agnese/Desktop/HOMELABS/2-ArtyFPGA/workspaces/section4/PicoBlazeUART/transmitter/Arty_Master.xdc]
+Finished Parsing XDC File [C:/Users/Agnese/Desktop/HOMELABS/2-ArtyFPGA/workspaces/section4/PicoBlazeUART/transmitter/Arty_Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 648.445 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 63 instances were transformed.
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 57 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 4 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 2 instances
+
+7 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 648.445 ; gain = 349.980
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35ti'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 668.406 ; gain = 19.961
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1838bfa1d
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1174.293 ; gain = 505.887
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+WARNING: [Opt 31-155] Driverless net processor/data_path_loop[1].alu_mux_lut_n_3 is driving LUT input pin I2 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: processor/data_path_loop[1].alu_mux_lut
+WARNING: [Opt 31-155] Driverless net processor/data_path_loop[2].alu_mux_lut_n_3 is driving LUT input pin I2 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: processor/data_path_loop[2].alu_mux_lut
+WARNING: [Opt 31-155] Driverless net processor/data_path_loop[3].alu_mux_lut_n_3 is driving LUT input pin I2 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: processor/data_path_loop[3].alu_mux_lut
+WARNING: [Opt 31-155] Driverless net processor/data_path_loop[4].alu_mux_lut_n_3 is driving LUT input pin I2 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: processor/data_path_loop[4].alu_mux_lut
+WARNING: [Opt 31-155] Driverless net processor/data_path_loop[5].alu_mux_lut_n_3 is driving LUT input pin I2 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: processor/data_path_loop[5].alu_mux_lut
+WARNING: [Opt 31-155] Driverless net processor/data_path_loop[6].alu_mux_lut_n_3 is driving LUT input pin I2 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: processor/data_path_loop[6].alu_mux_lut
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 185a48cc8
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 1315.207 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 1 cells and removed 1 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 21ebef3f6
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.082 . Memory (MB): peak = 1315.207 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 11 cells and removed 12 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 1dc04bccb
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.102 . Memory (MB): peak = 1315.207 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 3 cells and removed 5 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 1dc04bccb
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.129 . Memory (MB): peak = 1315.207 ; gain = 0.000
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 1dc04bccb
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.138 . Memory (MB): peak = 1315.207 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 1dc04bccb
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.142 . Memory (MB): peak = 1315.207 ; gain = 0.000
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               1  |               1  |                                              0  |
+|  Constant propagation         |              11  |              12  |                                              0  |
+|  Sweep                        |               3  |               5  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1315.207 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+23 Infos, 6 Warnings, 0 Critical Warnings and 1 Errors encountered.
+opt_design failed
+ERROR: [Opt 31-67] Problem: A LUT6 cell in the design is missing a connection on input pin I2, which is used by the LUT equation. This pin has either been left unconnected in the design or the connection was removed due to the trimming of unused logic. The LUT cell name is: processor/data_path_loop[1].alu_mux_lut.
+Resolution: Please review the preceding OPT INFO messages that detail what has been trimmed in the design to determine if the removal of unused logic is causing this error. If opt_design is being specified directly, it will need to be rerun with opt_design -verbose to generate detailed INFO messages about trimming.
+INFO: [Common 17-206] Exiting Vivado at Mon Aug  5 14:55:06 2019...
