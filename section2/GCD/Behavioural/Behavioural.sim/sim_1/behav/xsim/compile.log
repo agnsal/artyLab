@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Agnese/Desktop/HOMELABS/2-ArtyFPGA/workspaces/section 2/GCD/Behavioural/gcd1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'gcd1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Agnese/Desktop/HOMELABS/2-ArtyFPGA/workspaces/section 2/GCD/Behavioural/gcd1_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'gcd1_tb'
