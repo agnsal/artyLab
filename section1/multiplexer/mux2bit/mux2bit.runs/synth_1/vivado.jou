@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Aug  3 11:15:52 2019
+# Process ID: 7668
+# Current directory: C:/Users/Agnese/Desktop/HOMELABS/2-ArtyFPGA/workspaces/multiplexer/mux2bit/mux2bit.runs/synth_1
+# Command line: vivado.exe -log mux2bit.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mux2bit.tcl
+# Log file: C:/Users/Agnese/Desktop/HOMELABS/2-ArtyFPGA/workspaces/multiplexer/mux2bit/mux2bit.runs/synth_1/mux2bit.vds
+# Journal file: C:/Users/Agnese/Desktop/HOMELABS/2-ArtyFPGA/workspaces/multiplexer/mux2bit/mux2bit.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source mux2bit.tcl -notrace
