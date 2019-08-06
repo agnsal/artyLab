@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Aug  2 15:48:35 2019
+# Process ID: 15972
+# Current directory: C:/Users/Agnese/Desktop/HOMELABS/2-ArtyFPGA/workspaces/multiplexer/mux1bit/mux1bit.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/Agnese/Desktop/HOMELABS/2-ArtyFPGA/workspaces/multiplexer/mux1bit/mux1bit.sim/sim_1/behav/xsim/xsim.dir/mux1bitTestbench_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/Agnese/Desktop/HOMELABS/2-ArtyFPGA/workspaces/multiplexer/mux1bit/mux1bit.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Users/Agnese/Desktop/HOMELABS/2-ArtyFPGA/workspaces/multiplexer/mux1bit/mux1bit.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/Agnese/Desktop/HOMELABS/2-ArtyFPGA/workspaces/multiplexer/mux1bit/mux1bit.sim/sim_1/behav/xsim/xsim.dir/mux1bitTestbench_behav/webtalk/xsim_webtalk.tcl -notrace
