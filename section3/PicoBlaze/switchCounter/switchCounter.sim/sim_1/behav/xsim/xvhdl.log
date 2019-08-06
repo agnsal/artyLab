@@ -1,0 +1,10 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Agnese/Desktop/HOMELABS/2-ArtyFPGA/workspaces/section3/PicoBlaze/switchCounter/kcpsm6.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'kcpsm6'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Agnese/Desktop/HOMELABS/2-ArtyFPGA/workspaces/section3/PicoBlaze/switchCounter/switchCounter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'switchCounter'
+INFO: [VRFC 10-3107] analyzing entity 'jtag_loader_6'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Agnese/Desktop/HOMELABS/2-ArtyFPGA/workspaces/section3/PicoBlaze/switchCounter/embedded_pico.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'embedded_pico'
+ERROR: [VRFC 10-3628] partially associated formal 'out_port' cannot have actual OPEN [C:/Users/Agnese/Desktop/HOMELABS/2-ArtyFPGA/workspaces/section3/PicoBlaze/switchCounter/embedded_pico.vhd:88]
+ERROR: [VRFC 10-3782] unit 'behavioral' ignored due to previous errors [C:/Users/Agnese/Desktop/HOMELABS/2-ArtyFPGA/workspaces/section3/PicoBlaze/switchCounter/embedded_pico.vhd:19]
+INFO: [VRFC 10-3070] VHDL file 'C:/Users/Agnese/Desktop/HOMELABS/2-ArtyFPGA/workspaces/section3/PicoBlaze/switchCounter/embedded_pico.vhd' ignored due to errors

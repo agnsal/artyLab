@@ -1,0 +1,70 @@
+    
+;==============================
+; Copyright 2019 Agnese Salutari.
+; Licensed under the Apache License, Version 2.0 (the "License");
+; you may not use this file except in compliance with the License.
+; You may obtain a copy of the License at
+
+; http://www.apache.org/licenses/LICENSE-2.0
+
+; Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on
+; an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+; See the License for the specific language governing permissions and limitations under the License
+;==============================
+;== PREAMBLE
+
+; <Directives to set up constants, rename registers, and include other files>
+; <Initialization code executed once at startup>
+
+; Skip over subroutines so they don't execute at startup.
+; They can also be placed after the main program but this
+; style is necessary when using some of the Opbasm macros.
+
+jump main
+
+;==============================
+;== SUBROUTINES
+
+; my_function:
+;   <Function body>
+;   return
+
+; Interrupt handler (optional)
+; my_ISR:
+;   <Save registers in scratchpad RAM or switch register banks>
+;   <ISR body>
+;   <Restore registers>
+;   returni enable ; Restore interrupts after returning
+
+;=============================
+;== MAIN APPLICATION CODE
+; Count the number of the switches that are switched on and display the result on the LEDs
+main:
+    ; Prepare arguments passed through registers
+	INPUT s0, 00 ; Input Register
+	load s1, 00 ; 1 bits number
+	do_while:
+		OUTPUT s1, 01 ; Output Register
+		compare s0, 00 ; See if there are still 1 bits to count in the Input Register
+		jump Z, main ; There are no more 1 bits to count
+		sl0 s0
+		jump C, one_detected 
+	    ; There is no OS to return to, so the main program typically loops over itself
+	    jump do_while
+		one_detected:
+			add s1, 01 ; Increment 1 bits number
+			jump do_while
+
+;=============================
+;== SPECIAL CODE
+
+; Guard to avoid falling into the ISR code.
+; All unused memory jumps into this loop.
+; You could also try to recover or restart.
+; default_jump fatal_error
+; fatal_error: jump fatal_error  ; Infinite loop
+
+; Jump into the ISR from the default interrupt vector
+; at the end of 1K address space.
+; address 3FF
+; jump my_ISR

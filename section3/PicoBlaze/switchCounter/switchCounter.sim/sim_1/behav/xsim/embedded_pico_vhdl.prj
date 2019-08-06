@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../kcpsm6.vhd" \
+"../../../../switchCounter.vhd" \
+"../../../../embedded_pico.vhd" \
+
+# Do not sort compile order
+nosort
