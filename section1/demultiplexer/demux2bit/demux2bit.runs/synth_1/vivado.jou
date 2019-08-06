@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Aug  5 19:32:52 2019
+# Process ID: 5324
+# Current directory: C:/Users/Agnese/Desktop/HOMELABS/2-ArtyFPGA/workspaces/section1/demultiplexer/demux2bit/demux2bit.runs/synth_1
+# Command line: vivado.exe -log demux2bit.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source demux2bit.tcl
+# Log file: C:/Users/Agnese/Desktop/HOMELABS/2-ArtyFPGA/workspaces/section1/demultiplexer/demux2bit/demux2bit.runs/synth_1/demux2bit.vds
+# Journal file: C:/Users/Agnese/Desktop/HOMELABS/2-ArtyFPGA/workspaces/section1/demultiplexer/demux2bit/demux2bit.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source demux2bit.tcl -notrace

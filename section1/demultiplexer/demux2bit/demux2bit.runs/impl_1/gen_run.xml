@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35ticsg324-1L" LaunchTime="1565026534">
+  <File Type="OPT-HWDEF" Name="demux2bit.hwdef"/>
+  <File Type="ROUTE-BUS-SKEW" Name="demux2bit_bus_skew_routed.rpt"/>
+  <File Type="PA-DCP" Name="demux2bit.dcp"/>
+  <File Type="BITSTR-BMM" Name="demux2bit_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="demux2bit_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="demux2bit_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="demux2bit_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="demux2bit.tcl"/>
+  <File Type="OPT-TIMING" Name="demux2bit_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="demux2bit_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="demux2bit_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="demux2bit_reports.tcl"/>
+  <File Type="OPT-DRC" Name="demux2bit_drc_opted.rpt"/>
+  <File Type="PWROPT-DCP" Name="demux2bit_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="demux2bit_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="demux2bit_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="demux2bit_placed.dcp"/>
+  <File Type="PLACE-IO" Name="demux2bit_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="demux2bit_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="demux2bit_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="demux2bit_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="demux2bit_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="demux2bit_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="demux2bit_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="demux2bit_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="demux2bit_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="demux2bit.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="demux2bit_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="demux2bit_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="demux2bit_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="demux2bit.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="demux2bit_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="demux2bit_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="demux2bit_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="demux2bit_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="demux2bit_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="demux2bit_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="demux2bit.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="demux2bit_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="demux2bit.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="demux2bit_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="demux2bit_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="demux2bit.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="demux2bit_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="demux2bit_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="demux2bit_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="demux2bit_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="demux2bit_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="demux2bit_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="demux2bit_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="demux2bit_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="demux2bit_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="demux2bit_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="demux2bit_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="demux2bit_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="demux2bit_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="demux2bit_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="demux2bit_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="demux2bit_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="demux2bit_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="demux2bit_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="demux2bit.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="demux2bit_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="demux2bit.rbt"/>
+  <File Type="BITSTR-NKY" Name="demux2bit.nky"/>
+  <File Type="BG-BGN" Name="demux2bit.bgn"/>
+  <File Type="BG-DRC" Name="demux2bit.drc"/>
+  <File Type="RDI-RDI" Name="demux2bit.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/demux2bit.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="demux2bit"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>
