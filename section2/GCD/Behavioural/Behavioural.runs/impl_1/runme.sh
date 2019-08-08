@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Agnese/Desktop/HOMELABS/2-ArtyFPGA/workspaces/section 2/GCD/Behavioural/Behavioural.runs/impl_1'
+HD_PWD='C:/Users/Agnese/Desktop/HOMELABS/2-ArtyFPGA/workspaces/section2/GCD/Behavioural/Behavioural.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -42,6 +42,6 @@ EAStep()
 
 # pre-commands:
 /bin/touch .init_design.begin.rst
-EAStep vivado -log gcd1_tb.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source gcd1_tb.tcl -notrace
+EAStep vivado -log gcd1.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source gcd1.tcl -notrace
 
 

@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Agnese/Desktop/HOMELABS/2-ArtyFPGA/workspaces/section 2/GCD/Behavioural/Behavioural.runs/synth_1'
+HD_PWD='C:/Users/Agnese/Desktop/HOMELABS/2-ArtyFPGA/workspaces/section2/GCD/Behavioural/Behavioural.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log gcd1_tb.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source gcd1_tb.tcl
+EAStep vivado -log gcd1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source gcd1.tcl

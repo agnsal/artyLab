@@ -2,11 +2,11 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Sat Aug  3 19:15:24 2019
-# Process ID: 7196
-# Current directory: C:/Users/Agnese/Desktop/HOMELABS/2-ArtyFPGA/workspaces/section 2/GCD/Behavioural/Behavioural.runs/impl_1
-# Command line: vivado.exe -log gcd1_tb.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source gcd1_tb.tcl -notrace
-# Log file: C:/Users/Agnese/Desktop/HOMELABS/2-ArtyFPGA/workspaces/section 2/GCD/Behavioural/Behavioural.runs/impl_1/gcd1_tb.vdi
-# Journal file: C:/Users/Agnese/Desktop/HOMELABS/2-ArtyFPGA/workspaces/section 2/GCD/Behavioural/Behavioural.runs/impl_1\vivado.jou
+# Start of session at: Thu Aug  8 17:17:58 2019
+# Process ID: 14492
+# Current directory: C:/Users/Agnese/Desktop/HOMELABS/2-ArtyFPGA/workspaces/section2/GCD/Behavioural/Behavioural.runs/impl_1
+# Command line: vivado.exe -log gcd1.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source gcd1.tcl -notrace
+# Log file: C:/Users/Agnese/Desktop/HOMELABS/2-ArtyFPGA/workspaces/section2/GCD/Behavioural/Behavioural.runs/impl_1/gcd1.vdi
+# Journal file: C:/Users/Agnese/Desktop/HOMELABS/2-ArtyFPGA/workspaces/section2/GCD/Behavioural/Behavioural.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
-source gcd1_tb.tcl -notrace
+source gcd1.tcl -notrace
