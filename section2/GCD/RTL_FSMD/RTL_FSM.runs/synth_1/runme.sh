@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Agnese/Desktop/HOMELABS/2-ArtyFPGA/workspaces/section 2/GCD/RTL_FSMD/RTL_FSM.runs/synth_1'
+HD_PWD='C:/Users/Agnese/Desktop/HOMELABS/2-ArtyFPGA/workspaces/section2/GCD/RTL_FSMD/RTL_FSM.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log gcd_rtl_fsmd_tb.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source gcd_rtl_fsmd_tb.tcl
+EAStep vivado -log gcd.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source gcd.tcl

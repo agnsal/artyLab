@@ -2,11 +2,11 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Sat Aug  3 19:21:02 2019
-# Process ID: 10544
-# Current directory: C:/Users/Agnese/Desktop/HOMELABS/2-ArtyFPGA/workspaces/section 2/GCD/RTL_FSMD/RTL_FSM.runs/synth_1
-# Command line: vivado.exe -log gcd_rtl_fsmd_tb.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source gcd_rtl_fsmd_tb.tcl
-# Log file: C:/Users/Agnese/Desktop/HOMELABS/2-ArtyFPGA/workspaces/section 2/GCD/RTL_FSMD/RTL_FSM.runs/synth_1/gcd_rtl_fsmd_tb.vds
-# Journal file: C:/Users/Agnese/Desktop/HOMELABS/2-ArtyFPGA/workspaces/section 2/GCD/RTL_FSMD/RTL_FSM.runs/synth_1\vivado.jou
+# Start of session at: Thu Aug  8 17:40:34 2019
+# Process ID: 14468
+# Current directory: C:/Users/Agnese/Desktop/HOMELABS/2-ArtyFPGA/workspaces/section2/GCD/RTL_FSMD/RTL_FSM.runs/synth_1
+# Command line: vivado.exe -log gcd.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source gcd.tcl
+# Log file: C:/Users/Agnese/Desktop/HOMELABS/2-ArtyFPGA/workspaces/section2/GCD/RTL_FSMD/RTL_FSM.runs/synth_1/gcd.vds
+# Journal file: C:/Users/Agnese/Desktop/HOMELABS/2-ArtyFPGA/workspaces/section2/GCD/RTL_FSMD/RTL_FSM.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
-source gcd_rtl_fsmd_tb.tcl -notrace
+source gcd.tcl -notrace

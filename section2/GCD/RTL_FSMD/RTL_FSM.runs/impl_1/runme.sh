@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Agnese/Desktop/HOMELABS/2-ArtyFPGA/workspaces/section 2/GCD/RTL_FSMD/RTL_FSM.runs/impl_1'
+HD_PWD='C:/Users/Agnese/Desktop/HOMELABS/2-ArtyFPGA/workspaces/section2/GCD/RTL_FSMD/RTL_FSM.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -42,6 +42,6 @@ EAStep()
 
 # pre-commands:
 /bin/touch .init_design.begin.rst
-EAStep vivado -log gcd_rtl_fsmd_tb.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source gcd_rtl_fsmd_tb.tcl -notrace
+EAStep vivado -log gcd.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source gcd.tcl -notrace
 
 
